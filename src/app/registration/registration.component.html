@@ -1,0 +1,50 @@
+<div class="login-form-flex">
+	<form [formGroup]="form" (ngSubmit)="onSubmit()">
+		<mat-card class="register-form">
+			<mat-card-title>
+				Login
+			</mat-card-title>
+			<mat-card-content>
+				<p>
+					<mat-form-field class="example-full-width">
+						<input matInput type="text" placeholder="Vorname:"
+							formControlName="firstName">
+					</mat-form-field>
+				</p>
+				<p>
+					<mat-form-field class="example-full-width">
+						<input matInput type="text" placeholder="Nachname:"
+							formControlName="lastName">
+					</mat-form-field>
+				</p>
+				<p>
+					<mat-form-field class="example-full-width">
+						<input matInput type="text" placeholder="Büro:"
+							formControlName="office">
+					</mat-form-field>
+				</p>
+				<p>
+					<mat-form-field class="example-full-width">
+						<input matInput type="text" placeholder="Telefonnummer:"
+							formControlName="phone">
+					</mat-form-field>
+				</p>
+				<p>
+					<mat-form-field class="example-full-width">
+						<input matInput type="email" placeholder="Email:"
+							formControlName="email">
+					</mat-form-field>
+				</p>
+				<p>
+					<label>Password:</label>
+					<input type="password" formControlName="password">
+				</p>
+				<p>
+					<button mat-raised-button color="primary">Primary</button>
+					<button mat-raised-button color="primary" 
+						[disabled]="!form.valid">Submit</button>
+				</p>
+			</mat-card-content>
+		</mat-card>
+	</form>
+</div>

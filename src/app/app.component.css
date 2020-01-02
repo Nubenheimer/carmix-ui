@@ -1,0 +1,27 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+.header {
+    --background-color: #F1F1F1;
+    background-color: #7C929F;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid black;
+  }
+
+  .body {
+    padding: 20px;
+   
+  }
+
+  .body::after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url('/assets/images/20191231_075424.jpg');
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity : 0.8;
+    z-index: -1;
+}

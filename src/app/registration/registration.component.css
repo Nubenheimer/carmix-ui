@@ -1,0 +1,13 @@
+.login-form-flex {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+	opacity: 0.9;
+}
+
+.register-form {
+	width: 400px;
+	padding-left: 150px;;
+	background-color: rgb(243, 240, 236);
+}
